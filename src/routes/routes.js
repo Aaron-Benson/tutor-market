@@ -25,7 +25,7 @@ import Typography from 'src/components/Dashboard/Views/Components/Typography.vue
 import RegularForms from 'src/components/Dashboard/Views/Forms/RegularForms.vue'
 import ExtendedForms from 'src/components/Dashboard/Views/Forms/ExtendedForms.vue'
 import ValidationForms from 'src/components/Dashboard/Views/Forms/ValidationForms.vue'
-import Wizard from 'src/components/Dashboard/Views/Forms/Wizard.vue'
+import Wizard from 'src/components/Dashboard/Views/Forms/SignUpWizard.vue'
 
 // TableList pages
 import RegularTables from 'src/components/Dashboard/Views/Tables/RegularTables.vue'
