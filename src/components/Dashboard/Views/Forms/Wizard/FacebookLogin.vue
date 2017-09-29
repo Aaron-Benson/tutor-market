@@ -54,7 +54,7 @@
               })
           }
         }, {
-          scope: 'email', 
+          scope: 'email, public_profile', 
           return_scopes: true
         });
       }
