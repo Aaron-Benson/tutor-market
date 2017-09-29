@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h5 class="text-center">Please tell us more about yourself.</h5>
+    <h5 class="text-center">Log into Facebook and we'll do the rest.</h5>
     <div class="row">
       <div class="col-md-5 col-md-offset-1">
         <div class="form-group">
