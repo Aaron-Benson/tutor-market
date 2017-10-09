@@ -1,5 +1,15 @@
 export default [
   {
+    name: 'Home',
+    icon: 'ti-home',
+    path: '/admin/overview'
+  },
+  {
+    name: 'Sign-Up',
+    icon: 'ti-pencil-alt',
+    path: '/forms/wizard'
+  },
+  {
     name: 'Dashboard',
     icon: 'ti-panel',
     collapsed: true,
@@ -11,11 +21,6 @@ export default [
       name: 'Stats',
       path: '/admin/stats'
     }]
-  },
-  {
-    name: 'Sign-Up',
-    icon: 'ti-pencil-alt',
-    path: '/forms/wizard'
   },
   {
     name: 'Components',

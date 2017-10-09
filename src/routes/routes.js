@@ -2,7 +2,7 @@ import DashboardLayout from '../components/Dashboard/Layout/DashboardLayout.vue'
 // GeneralViews
 import NotFound from '../components/GeneralViews/NotFoundPage.vue'
 // Dashboard pages
-import Overview from 'src/components/Dashboard/Views/Dashboard/Overview.vue'
+import Overview from 'src/components/Dashboard/Views/Dashboard/Main.vue'
 import Stats from 'src/components/Dashboard/Views/Dashboard/Stats.vue'
 
 // Pages
