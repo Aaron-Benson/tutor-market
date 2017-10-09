@@ -5,6 +5,8 @@
         <div class="card card-wizard" id="wizardCard">
           <form-wizard shape="tab"
                        @on-complete="wizardComplete"
+                       title="Sign-Up Wizard"
+                       subtitle=""
                        error-color="#EB5E28"
                        color="#66615B"
                        >
