@@ -17,18 +17,21 @@
   
   export default {
     computed: {
-      ...mapFields(['email', 'password'])
+      ...mapFields(['firstName', 'lastName', 'id'])
     },
     data () {
       return {
         model: {
-          email: '',
-          password: ''
+          firstName: '',
+          lastName: '',
+          id: ''
         },
         modelValidations: {
-          email: {
+          id: {
           },
-          password: {
+          firstName: {
+          },
+          lastName: {
           }
         }
       }
@@ -41,9 +44,17 @@
         return this.$validator.validateAll()
       },
       checkLoginState: function() {
+        var this_ref = this
         FB.login(function(response) {
           if (response.authResponse) {
-            document.getElementById("nextButton").click()
+            FB.api('/me', function(response) {
+              var nameArr = response.name.split(/[ ,]+/)
+              this_ref.model.firstName = nameArr[0]
+              this_ref.model.lastName = nameArr[nameArr.length - 1]
+              this_ref.model.id = response.id
+              //swal(this_ref.model.lastName)
+              document.getElementById("nextButton").click()
+            });
           } else {
             swal({
                 title: 'Facebook Login Failed',
@@ -53,9 +64,6 @@
                 buttonsStyling: false
               })
           }
-        }, {
-          scope: 'email, public_profile', 
-          return_scopes: true
         });
       }
     }
