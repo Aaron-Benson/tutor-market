@@ -13,6 +13,11 @@ export default [
     }]
   },
   {
+    name: 'Sign-Up',
+    icon: 'ti-pencil-alt',
+    path: '/forms/wizard'
+  },
+  {
     name: 'Components',
     icon: 'ti-package',
     collapsed: true,

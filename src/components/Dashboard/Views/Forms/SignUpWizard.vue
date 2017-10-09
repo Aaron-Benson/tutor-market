@@ -52,6 +52,10 @@
     },
     methods: {
       validateFirstStep () {
+        var firstStepModel = {
+          ...this.$refs.firstStep.model
+        }
+        this.$refs.secondStep.takeFirstModel(firstStepModel)
         return this.$refs.firstStep.validate()
       },
       validateSecondStep () {
@@ -59,11 +63,11 @@
       },
       wizardComplete () {
         // we gather models from all steps into one model
-        this.wizardModel = {
-          ...this.$refs.firstStep.model,
-          ...this.$refs.secondStep.model
-        }
-        swal('Good job!', 'You clicked the finish button!', 'success')
+        //this.wizardModel = {
+        //  ...this.$refs.firstStep.model,
+        //  ...this.$refs.secondStep.model
+        //}
+        swal('Account Created!', 'Please check the confirmation in your email inbox.', 'success')
       }
     }
   }
